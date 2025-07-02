@@ -33,7 +33,7 @@ public class QRGenerator {
             System.out.println("Favicon failed: " + e.getMessage());
 
             // Step 2: Fallback to cloud image
-            String fallbackUrl = "https://github.com/Akt-Pranav/blogkind/blob/main/pksa%20logo.png?raw=true";
+            String fallbackUrl = "https://github.com/Akt-Pranav/QRCode-Generator/blob/main/pksa-logo.png";
             try (InputStream fallbackStream = new URL(fallbackUrl).openStream()) {
                 logo = ImageIO.read(fallbackStream);
             } catch (Exception ex) {
